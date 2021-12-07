@@ -12,13 +12,16 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     },
     extensions: [
-      '.js', '.ts', '.jsx', '.tsx'
+      '.ts', '.tsx', '.vue'
     ],
   },
   css:{
     modules:{
       scopeBehaviour: 'local'
     }
+  },
+  optimizeDeps: {
+    include: ["echarts"]
   },
   plugins: [
     vue(), // 提供 vue 单文件组件支持
