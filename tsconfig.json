@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "baseUrl": "",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     },
     "target": "esnext",
-    "useDefineForClassFields": true,
     "module": "esnext",
+    "useDefineForClassFields": true,
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",

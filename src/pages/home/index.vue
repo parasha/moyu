@@ -1,24 +1,15 @@
 <template>
-  <button @click="buttonClick">{{ number }}</button>
+  <InfiniteScroll height="100%" >
+    
+  </InfiniteScroll>
 </template>
 
 <script lang="ts">
-import { ref } from "vue";
+import InfiniteScroll from "@/components/infinite-scroll/index.vue";
 
 export default {
-  setup() {
-    const number = ref(0);
-
-    return {
-      number,
-    };
-  },
-  methods: {
-    buttonClick() {
-      console.log(this.number);
-      this.number++;
-    },
-  },
+  components: { InfiniteScroll },
+  setup() {},
 };
 </script>
 
